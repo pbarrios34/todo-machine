@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+#root {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:radial-gradient(at 79.52809585921827% 94.72545089597386%, hsla(218.0952380952381, 56.75675675675676%, 21.764705882352942%, 1) 0%, hsla(218.0952380952381, 56.75675675675676%, 21.764705882352942%, 0) 100%), radial-gradient(at 12.757838814464895% 54.53578355300151%, hsla(203.14285714285714, 56.4516129032258%, 24.313725490196077%, 1) 0%, hsla(203.14285714285714, 56.4516129032258%, 24.313725490196077%, 0) 100%), radial-gradient(at 19.181820088384114% 66.38683690185131%, hsla(187.20000000000002, 50.000000000000014%, 19.607843137254903%, 1) 0%, hsla(187.20000000000002, 50.000000000000014%, 19.607843137254903%, 0) 100%), radial-gradient(at 41.70329551210815% 36.28592836996152%, hsla(170.57142857142858, 56.4516129032258%, 24.313725490196077%, 1) 0%, hsla(170.57142857142858, 56.4516129032258%, 24.313725490196077%, 0) 100%), radial-gradient(at 53.353338708567144% 66.30630291464418%, hsla(153.33333333333331, 56.75675675675676%, 21.764705882352942%, 1) 0%, hsla(153.33333333333331, 56.75675675675676%, 21.764705882352942%, 0) 100%), radial-gradient(at 25.145612261670745% 33.524324992264454%, hsla(218.0952380952381, 56.75675675675676%, 21.764705882352942%, 1) 0%, hsla(218.0952380952381, 56.75675675675676%, 21.764705882352942%, 0) 100%), radial-gradient(at 35.30720570733911% 71.36771151233214%, hsla(203.14285714285714, 56.4516129032258%, 24.313725490196077%, 1) 0%, hsla(203.14285714285714, 56.4516129032258%, 24.313725490196077%, 0) 100%), radial-gradient(at 73.47743310763573% 3.297815342517041%, hsla(187.20000000000002, 50.000000000000014%, 19.607843137254903%, 1) 0%, hsla(187.20000000000002, 50.000000000000014%, 19.607843137254903%, 0) 100%), radial-gradient(at 96.51388291908505% 45.07612948359632%, hsla(170.57142857142858, 56.4516129032258%, 24.313725490196077%, 1) 0%, hsla(170.57142857142858, 56.4516129032258%, 24.313725490196077%, 0) 100%);
+}
+.searchContainer {
+    width: 50%;
+    height: 700px;
+    background: rgba(27, 97, 86, 0.26);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 20px;
+    display: grid;
+    gap: 16px;
+    justify-content: center;
+}
+.searchContainer h1 {
+    color: #182F57;
+}
+.inputSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputSearch input {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0.5px solid black;
+    text-align: center;
+    background: #1B4661;
+    color: #1B6156;
+}
+.inputSearch input:focus {
+    background: #19454B;
+    color: white;
+}
+.iconSearch {
+    width: 20px;
+    height: 20px;
+    display: inline;
+    position: relative;
+    right: 30px;
+    z-index: 90;
+    cursor: pointer;
+}
+.taskList {
+    width: 50%;
+    height: 700px;
+    background: rgba(27, 97, 86, 0.26);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+.taskList ul, .taskList li {
+    list-style: none;
+}
+.taskList ul {
+    margin: 15px 0 0 0;
+    padding: 0 12px 0 12px;
+    height: 95%;
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-darkshadow-color: none;
+}
+.taskList li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: #182f579c;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+.taskList li p {
+    width: 100%;
+    font-size: 18px;
+}
+.iconCheck {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    opacity: 100%;
+}
+.Icon-Check--active {
+    opacity: 30%;
+}
+.TodoItem-p--complete {
+    text-decoration: line-through;
+    color: #1B4661;
+    font-weight: bold;
+}
+.iconRemove {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+.iconRemove:hover {
+    opacity: 100%;
+}
+.buttonContainer {
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: #1b6156c9;
+    
+    transform: rotate(0);
+    transition: .3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #233553;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #97ca3f;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    transform: rotate(224deg);
 }
