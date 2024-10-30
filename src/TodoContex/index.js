@@ -6,7 +6,7 @@ const TodoContext = React.createContext();
 function TodoProvider({ children }) {
     const {
         item: todos, 
-        seveItem: saveTodos, 
+        saveItem: saveTodos, 
         loading, 
         error, 
     } = useLocalStorage('TODOS_V1', []);
@@ -14,13 +14,13 @@ function TodoProvider({ children }) {
     const [searchValue, setSearchValue] = React.useState('');
 
     const completedTodos = todos.filter(
-        todos => !!todos.completed
+        todo => !!todo.completed
     ).length;
     const totalTodos = todos.length;
 
     const searchedTodos = todos.filter(
-        (todos) => {
-        const todoText = todos.text.toLowerCase();
+        (todo) => {
+        const todoText = todo.text.toLowerCase();
         const searchText = searchValue.toLowerCase();
         return todoText.includes(searchText);
         }
@@ -33,7 +33,7 @@ function TodoProvider({ children }) {
         );
         newTodos[todoIndex].completed = true;
         saveTodos(newTodos);
-    }
+    };
 
     const deleteTodo = (text) => {
         const newTodos = [...todos];
@@ -42,7 +42,8 @@ function TodoProvider({ children }) {
         );
         newTodos.splice(todoIndex, 1);
         saveTodos(newTodos);
-    }
+    };
+
     return (
         <TodoContext.Provider value={{
             loading,
@@ -60,4 +61,4 @@ function TodoProvider({ children }) {
     );
 }
 
-export { TodoContext, TodoProvider }
+export { TodoContext, TodoProvider };
