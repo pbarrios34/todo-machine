@@ -1,0 +1,26 @@
+.iconCheck {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    opacity: 100%;
+}
+.Icon-Check--active {
+    opacity: 30%;
+}
+.TodoItem-p--complete {
+    text-decoration: line-through;
+    color: #1B4661;
+    font-weight: bold;
+}
+.iconRemove {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+.iconRemove:hover {
+    opacity: 100%;
+}

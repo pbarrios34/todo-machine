@@ -1,0 +1,24 @@
+.buttonContainer {
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: #1b6156c9;
+    
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+button:hover {
+    transform: rotate(224deg);
+}
