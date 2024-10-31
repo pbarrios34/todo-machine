@@ -11,7 +11,7 @@
 }
 .TodoItem-p--complete {
     text-decoration: line-through;
-    color: #1B4661;
+    color: #1B4661 !important;
     font-weight: bold;
 }
 .iconRemove {
