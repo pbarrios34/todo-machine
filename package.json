@@ -1,4 +1,5 @@
 {
+  "homepage": "file://wsl.localhost/Ubuntu/home/devpbar/Documents/Projects/cursosPlatzi/cursoReactjs/curso-react-intro/build/",
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
