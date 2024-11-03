@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/pbarrios34/todo-machine",
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
@@ -33,7 +32,9 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://pbarrios34.github.io/todo-machine/",
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "react-scripts": "^5.0.1"
   }
 }

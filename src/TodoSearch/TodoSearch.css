@@ -41,3 +41,21 @@
     z-index: 90;
     cursor: pointer;
 }
+
+@media (max-width: 800px) {
+    .searchContainer {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        gap: 16px;
+        justify-content: center;
+    }
+  }
+
+@media (max-width: 730px) {
+    .searchContainer h1 {
+        font-size: 20px;
+    }
+}
