@@ -1,5 +1,5 @@
 {
-  "homepage": "file://wsl.localhost/Ubuntu/home/devpbar/Documents/Projects/cursosPlatzi/cursoReactjs/curso-react-intro/build/",
+  "homepage": "https://github.com/pbarrios34/todo-machine",
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
@@ -11,6 +11,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh.pages -d build",
     "eject": "react-scripts eject",
     "phoenix": "rm -f package-lock.json && rm -rf ./node_modules && npm install --no-fund --no-audit"
   },
@@ -30,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
