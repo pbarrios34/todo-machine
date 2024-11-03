@@ -5,7 +5,7 @@
     bottom: 20px;
     z-index: 91;
 }
-button {
+.buttonContainer button {
     width: 80px;
     height: 80px;
     font-size: 48px;
@@ -20,6 +20,6 @@ button {
     transition: .3s ease;
 }
 
-button:hover {
+.buttonContainer button:hover {
     transform: rotate(224deg);
 }
