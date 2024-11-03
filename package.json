@@ -34,7 +34,6 @@
   },
   "homepage": "https://pbarrios34.github.io/todo-machine/",
   "devDependencies": {
-    "gh-pages": "^6.2.0",
-    "react-scripts": "^5.0.1"
+    "gh-pages": "^6.2.0"
   }
 }
