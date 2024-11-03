@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pbarrios34/todo-machine/static/css/main.f6e58c45.css",
+    "main.js": "/pbarrios34/todo-machine/static/js/main.bd359dac.js",
+    "index.html": "/pbarrios34/todo-machine/index.html",
+    "main.f6e58c45.css.map": "/pbarrios34/todo-machine/static/css/main.f6e58c45.css.map",
+    "main.bd359dac.js.map": "/pbarrios34/todo-machine/static/js/main.bd359dac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6e58c45.css",
+    "static/js/main.bd359dac.js"
+  ]
+}
